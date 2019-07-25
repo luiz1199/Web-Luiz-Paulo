@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Configura o texto do menu, como cor, tamanho da letra, etc; */
+.menu a{
+    color: #fff; /* cor da letra */
+    text-decoration: none; /*retira a linha abaixo da letra */
+    display: block;
+    cursor: pointer;
+    font-weight: 200; /* tamanho da letra */
+    letter-spacing: 0.001em; /* espaçamento entre as letras */
+}
+/* Configura as linhas do menu, colocando na horizontal, entre outros */
+.menu> .menu-list> li{
+    float: left; /* mantém as caixas do menu lado a lado à esquerda da página */
+    position: relative;
+    left: 150px; /* gambiarra para afastar as caixas do menu até o meio da página */
+   
+}
+
+/* configura a caixa do menu */
+.menu> .menu-list> li> a{
+    padding: 15px; /* configura o tamanho da caixa do menu */
+    margin: 0 5px; /* configura as margens de cada caixa do menu */
+    background: #4876FF; /* cor de fundo da caixa do menu */
+}
+
+/* permite destacar o texto da caixa quando passar o ponteiro por cima */
+.menu a:hover{
+    text-decoration: none;
+    color: #D8D8D8;
+}
+/* remove as bolinhas do menu */
+.menu .menu-list{
+    list-style: none;
+}
+
+/* mantém os ícones de cada caixa centralizados sobre as mesmas */
+.icones-menu1{
+    margin-left: 45%;
+}
+
+.icones-menu2{
+    margin-left: 43%;
+}
+
+
+.icones-menu3{
+    margin-left: 42%;
+}
+
+
+.icones-menu4{
+    margin-left: 44%;
+}
+
+.icones-menu5{
+    margin-left: 36%;
+}
+
+
+/* imagem de fundo da página */
+body { background-image: url("fotos/planodefundo2.jpg"); }
+
+/* configurações do rodapé */
+.footer{
+    text-align: center;
+    font-size: 12px;
+    height: 50px;
+    margin-top: -50px;
+}
+
+.content{
+    min-height: 100%;
+}
+
+.content-inside{
+    padding: 20px;
+    padding-bottom: 50px;
+}
